@@ -1,3 +1,4 @@
+#Drug Discovery - Quiz 4
 
 mol<-parse.smiles("C1CN(CCC1NC(C2=CN=CC=C2)C3=CN(N=C3)CC(F)(F)F)C4=CC=C(C=C4)C(F)(F)F")[[1]]
 get.xlogp(mol)
