@@ -30638,4 +30638,308 @@ f
 0002658338 00000 n
 0002658624 00000 n
 0002658861 00000 n
-trailer<</Size 3078/Root 3030 0 R/Info 3031 0 R/ID[<386C534FF252242D8D01E20334847F51><3A68426586064D77BECA675B6D1C9637>]/Prev 2648723>>startxref2659224%%EOF
+trailer<</Size 3078/Root 3030 0 R/Info 3031 0 R/ID[<386C534FF252242D8D01E20334847F51><3A68426586064D77BECA675B6D1C9637>]/Prev 2648723>>startxref2659224%%EOF107 0 obj<</A 105 0 R/Count 3/First 111 0 R/Last 119 0 R/Next 123 0 R/Parent 2934 0 R/Prev 79 0 R/Title 108 0 R>>endobj123 0 obj<</A 121 0 R/Count -4/First 127 0 R/Last 139 0 R/Next 143 0 R/Parent 2934 0 R/Prev 107 0 R/Title 124 0 R>>endobj1177 0 obj<</Annots[1174 0 R 1175 0 R 3083 0 R 3084 0 R 3085 0 R 3086 0 R]/Contents 1178 0 R/MediaBox[0 0 595.276 841.89]/Parent 1168 0 R/Resources 1176 0 R/Type/Page>>endobj1337 0 obj<</Annots[1322 0 R 1323 0 R 1335 0 R 3078 0 R 3079 0 R]/Contents 1338 0 R/MediaBox[0 0 595.276 841.89]/Parent 1298 0 R/Resources 1336 0 R/Type/Page>>endobj2934 0 obj<</Count 25/First 3 0 R/Last 427 0 R/Type/Outlines>>endobj3031 0 obj<</Author(Yanchang Zhao)/CreationDate(D:20151020155024+11'00')/Creator(LaTeX with hyperref package)/Keywords(R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis)/ModDate(D:20160303182534-08'00')/PTEX.Fullbanner(This is MiKTeX-pdfTeX 2.9.4225 \(1.40.12\))/Producer(pdfTeX-1.40.12)/Subject(R data mining machine learning analytics)/Title(R and Data Mining: Examples and Case Studies)/Trapped/False>>endobj3032 0 obj<</Length 4144/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.157285, 2014/12/12-00:43:15        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Yanchang Zhao</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R data mining machine learning analytics</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R and Data Mining: Examples and Case Studies</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2015-10-20T15:50:24+11:00</xmp:CreateDate>
+         <xmp:CreatorTool>LaTeX with hyperref package</xmp:CreatorTool>
+         <xmp:ModifyDate>2016-03-03T18:25:34-08:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2016-03-03T18:25:34-08:00</xmp:MetadataDate>
+         <pdf:Keywords>R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis</pdf:Keywords>
+         <pdf:Producer>pdfTeX-1.40.12</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <pdfx:PTEX.Fullbanner>This is MiKTeX-pdfTeX 2.9.4225 (1.40.12)</pdfx:PTEX.Fullbanner>
+         <xmpMM:DocumentID>uuid:b10f336a-40a4-a84d-84e5-f60831f44a00</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:e534d65c-ebf9-a945-9fc6-fb17c812d85b</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj3078 0 obj<</AP<</N 3080 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160303181750-08'00')/F 4/M(D:20160303181750-08'00')/NM(dc132820-bb4d-1743-83bd-1b9b40d70623)/P 1337 0 R/Popup 3079 0 R/QuadPoints[170.824 641.803 352.447 641.803 170.824 631.84 352.447 631.84 355.002 641.265 386.334 641.265 355.002 632.01 386.334 632.01 388.889 641.803 513.013 641.803 388.889 631.84 513.013 631.84 90.0 629.847 242.347 629.847 90.0 619.884 242.347 619.884]/Rect[87.3405 619.573 515.672 642.114]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3079 0 obj<</F 28/Open false/Parent 3078 0 R/Rect[595.276 521.803 775.276 641.803]/Subtype/Popup/Type/Annot>>endobj3080 0 obj<</BBox[0.0 0.0 428.332 22.5413]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3081 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3081 0 obj<</BBox[0.0 0.0 428.332 22.5413]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3082 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3082 0 obj<</BBox[87.3405 619.573 515.672 642.114]/Filter[/FlateDecode]/FormType 1/Length 245/Matrix[1.0 0.0 0.0 1.0 -87.3405 -619.573]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâTë;é√0D{ùÇ' ƒØ®Ûÿ4Ÿfõ\?bÖ⁄ ¿≥ﬁh<& Ë˜hùy¿´—Ë,.Ñ°ù·∑ëÍ0I¶H
+ô®¶Âizù'\MåQ’£ÿ3ô‚òVbÅ;ª¨›‡j?Y–Fæ|eÄaOË¬˘ú#˚-#∏˚'c√A&ˆêïzkYÖ]c’G=X÷ã@#;≈";¸ÎÌ
+üÇ˜ÇKàòÁÄÀ0Ìq|dëΩ√÷j?#¡N¸oø¨Ç‚T^Å;∫¨søŸ¡iÊ∫
+≈@7 #Ã»¬
+ÍáuûÛ¸˙Wceu+ˆL¶ËSG9πcÀ€wØ.o ÿ{endstreamendobj3083 0 obj<</AP<</N 3090 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160220200033-08'00')/F 4/M(D:20160220200033-08'00')/NM(418ee142-f192-554c-a44d-16b258d4ec26)/P 1177 0 R/Popup 3084 0 R/QuadPoints[170.148 322.93 513.003 322.93 170.148 312.967 513.003 312.967 90.0 310.975 256.324 310.975 90.0 301.012 256.324 301.012]/Rect[87.3405 300.701 515.662 323.241]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3084 0 obj<</F 28/Open false/Parent 3083 0 R/Rect[595.276 202.93 775.276 322.93]/Subtype/Popup/Type/Annot>>endobj3085 0 obj<</AP<</N 3087 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160220200051-08'00')/F 4/M(D:20160220200051-08'00')/NM(72b24488-2898-5b4e-9443-f4dc9623fa7d)/P 1177 0 R/Popup 3086 0 R/QuadPoints[261.494 310.975 513.005 310.975 261.494 301.012 513.005 301.012 90.0 299.02 243.38 299.02 90.0 289.057 243.38 289.057]/Rect[87.3405 288.746 515.665 311.286]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3086 0 obj<</F 28/Open false/Parent 3085 0 R/Rect[595.276 190.975 775.276 310.975]/Subtype/Popup/Type/Annot>>endobj3087 0 obj<</BBox[0.0 0.0 428.324 22.5403]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3088 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3088 0 obj<</BBox[0.0 0.0 428.324 22.5403]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3089 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3089 0 obj<</BBox[87.3405 288.746 515.665 311.286]/Filter[/FlateDecode]/FormType 1/Length 148/Matrix[1.0 0.0 0.0 1.0 -87.3405 -288.746]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâLéπ√0E{M¡	ﬁÁ17Nì&Îá¨»˘/ÇœŸC§√∑I0ZöÇ#±ºõx"[p1E
+xêQŒ∞}Lò›·hŒäD.trTW€æπ≥∑m-8⁄´%ÅåDÚ>çé·\≠Y≠‰FØcÍ≥ÙRn±äÎøÍwÏ2d´‰\û’97¸ ©«:Ñendstreamendobj3090 0 obj<</BBox[0.0 0.0 428.322 22.5403]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3091 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3091 0 obj<</BBox[0.0 0.0 428.322 22.5403]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3092 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3092 0 obj<</BBox[87.3405 300.701 515.662 323.241]/Filter[/FlateDecode]/FormType 1/Length 150/Matrix[1.0 0.0 0.0 1.0 -87.3405 -300.701]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâLè;1{N¡	üÏÛX 6õ&MÆVäC
+öÛx
+2æN`
+’ƒ7H2…ëé&J3“	I9ßs™	l¢L>d`{Zû·#fçMÆ"•;è∂öÏ‰∂ˆ˝òå∆B,zTüë^∂±ë6ıGº˜ÖiVüÍA¶ñ?t™≈îŸ∆˘Ü∂∂/ﬂM> ±à;Pendstreamendobjxref0 10000000000 65535 f
+107 10002659935 00000 n
+123 10002660057 00000 n
+1177 10002660181 00000 n
+1337 10002660358 00000 n
+2934 10002660526 00000 n
+3031 20002660597 00000 n
+0002661197 00000 n
+3078 150002665420 00000 n
+0002665962 00000 n
+0002666080 00000 n
+0002666366 00000 n
+0002666603 00000 n
+0002667066 00000 n
+0002667484 00000 n
+0002667600 00000 n
+0002668016 00000 n
+0002668134 00000 n
+0002668420 00000 n
+0002668657 00000 n
+0002669023 00000 n
+0002669309 00000 n
+0002669546 00000 n
+trailer<</Size 3093/Root 3030 0 R/Info 3031 0 R/ID[<386C534FF252242D8D01E20334847F51><256DC9A83FF448CA85CC27322A8772B9>]/Prev 2659224>>startxref2669914%%EOF143 0 obj<</A 141 0 R/Count 4/First 147 0 R/Last 159 0 R/Next 163 0 R/Parent 2934 0 R/Prev 123 0 R/Title 144 0 R>>endobj1372 0 obj<</Annots[1352 0 R 1366 0 R 1367 0 R 1368 0 R 1369 0 R 1370 0 R 3093 0 R 3094 0 R 3095 0 R 3096 0 R 3097 0 R 3098 0 R]/Contents 1373 0 R/MediaBox[0 0 595.276 841.89]/Parent 1375 0 R/Resources 1371 0 R/Type/Page>>endobj2934 0 obj<</Count 29/First 3 0 R/Last 427 0 R/Type/Outlines>>endobj3031 0 obj<</Author(Yanchang Zhao)/CreationDate(D:20151020155024+11'00')/Creator(LaTeX with hyperref package)/Keywords(R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis)/ModDate(D:20160303184235-08'00')/PTEX.Fullbanner(This is MiKTeX-pdfTeX 2.9.4225 \(1.40.12\))/Producer(pdfTeX-1.40.12)/Subject(R data mining machine learning analytics)/Title(R and Data Mining: Examples and Case Studies)/Trapped/False>>endobj3032 0 obj<</Length 4144/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.157285, 2014/12/12-00:43:15        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Yanchang Zhao</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R data mining machine learning analytics</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R and Data Mining: Examples and Case Studies</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2015-10-20T15:50:24+11:00</xmp:CreateDate>
+         <xmp:CreatorTool>LaTeX with hyperref package</xmp:CreatorTool>
+         <xmp:ModifyDate>2016-03-03T18:42:35-08:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2016-03-03T18:42:35-08:00</xmp:MetadataDate>
+         <pdf:Keywords>R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis</pdf:Keywords>
+         <pdf:Producer>pdfTeX-1.40.12</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <pdfx:PTEX.Fullbanner>This is MiKTeX-pdfTeX 2.9.4225 (1.40.12)</pdfx:PTEX.Fullbanner>
+         <xmpMM:DocumentID>uuid:b10f336a-40a4-a84d-84e5-f60831f44a00</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:c92798a9-5102-8849-8076-5cf69813c365</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj3093 0 obj<</AP<</N 3102 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160303182650-08'00')/F 4/M(D:20160303182650-08'00')/NM(4e4231d7-37d6-d04d-bb83-e56219e37659)/P 1372 0 R/Popup 3094 0 R/QuadPoints[330.181 715.001 371.954 715.001 330.181 705.746 371.954 705.746]/Rect[327.71 705.457 374.425 715.29]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3094 0 obj<</F 28/Open false/Parent 3093 0 R/Rect[595.276 595.001 775.276 715.001]/Subtype/Popup/Type/Annot>>endobj3095 0 obj<</AP<</N 3099 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160303182849-08'00')/F 4/M(D:20160303182849-08'00')/NM(6b28e5d1-c5ce-8540-8547-c9afde64d61c)/P 1372 0 R/Popup 3096 0 R/QuadPoints[104.944 691.576 513.0 691.576 104.944 681.613 513.0 681.613 90.0 679.621 150.021 679.621 90.0 669.658 150.021 669.658]/Rect[87.3405 669.347 515.659 691.887]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3096 0 obj<</F 28/Open false/Parent 3095 0 R/Rect[595.276 571.576 775.276 691.576]/Subtype/Popup/Type/Annot>>endobj3097 0 obj<</AP<</N 3066 0 R>>/C[0.96077 0.647034 0.0]/Contents(Leaving it for now)/CreationDate(D:20160303184230-08'00')/F 28/M(D:20160303184235-08'00')/NM(2accf8fa-7319-4f4c-9224-cc5d4e2362b2)/Name/Comment/P 1372 0 R/Popup 3098 0 R/RC(<?xml version="1.0"?><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="Acrobat:15.10.0" xfa:spec="2.0.2" ><p dir="ltr"><span dir="ltr" style="font-size:14.0pt;text-align:left;color:#000000;font-\weight:normal;font-style:normal">Leaving it for now</span></p></body>)/Rect[31.8813 132.521 49.8813 150.521]/Subj(Sticky Note)/Subtype/Text/T(dbiswas)/Type/Annot>>endobj3098 0 obj<</F 28/Open true/Parent 3097 0 R/Rect[595.276 30.5211 775.276 150.521]/Subtype/Popup/Type/Annot>>endobj3099 0 obj<</BBox[0.0 0.0 428.319 22.5403]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3100 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3100 0 obj<</BBox[0.0 0.0 428.319 22.5403]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3101 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3101 0 obj<</BBox[87.3405 669.347 515.659 691.887]/Filter[/FlateDecode]/FormType 1/Length 150/Matrix[1.0 0.0 0.0 1.0 -87.3405 -669.347]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâLé11{øÇ¨ 0Ôâî4ó&MæN∫ãMÖF;∞BBLüWc∏j–∑	‰‰S‡“;Ω),mÎH£ç$ ˙k)∞∞§G3QdÕbG1CSñ∏ëÎ¯ÚÓ
+èˆl…‰ûpõg•µI˝≥-–Pß3ïWûÂã1XŸ;ä)∫œÕŸ»uvy˜Ô≥ÀOÄ <Œendstreamendobj3102 0 obj<</BBox[0.0 0.0 46.7142 9.83359]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3103 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3103 0 obj<</BBox[0.0 0.0 46.7142 9.83359]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3104 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3104 0 obj<</BBox[327.71 705.457 374.425 715.29]/FormType 1/Length 170/Matrix[1.0 0.0 0.0 1.0 -327.71 -705.457]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+1 1 0 rg
+0.5784 w
+330.181 705.7458 m
+327.9995 707.9272 327.9995 712.8195 330.181 715.0009 c
+371.9539 715.0009 l
+374.1353 712.8195 374.1353 707.9272 371.9539 705.7458 c
+f
+endstreamendobjxref0 10000000000 65535 f
+143 10002670592 00000 n
+1372 10002670715 00000 n
+2934 10002670946 00000 n
+3031 20002671017 00000 n
+0002671617 00000 n
+3093 120002675840 00000 n
+0002676200 00000 n
+0002676318 00000 n
+0002676734 00000 n
+0002676852 00000 n
+0002677518 00000 n
+0002677635 00000 n
+0002677921 00000 n
+0002678158 00000 n
+0002678526 00000 n
+0002678812 00000 n
+0002679049 00000 n
+trailer<</Size 3105/Root 3030 0 R/Info 3031 0 R/ID[<386C534FF252242D8D01E20334847F51><D84AD96D1BEE458E88244BCDDABF13A7>]/Prev 2669914>>startxref2679413%%EOF163 0 obj<</A 161 0 R/Count 5/First 167 0 R/Last 183 0 R/Next 187 0 R/Parent 2934 0 R/Prev 143 0 R/Title 164 0 R>>endobj187 0 obj<</A 185 0 R/Count 14/First 191 0 R/Last 243 0 R/Next 247 0 R/Parent 2934 0 R/Prev 163 0 R/Title 188 0 R>>endobj203 0 obj<</A 201 0 R/Count 4/First 207 0 R/Last 219 0 R/Next 223 0 R/Parent 187 0 R/Prev 199 0 R/Title 204 0 R>>endobj223 0 obj<</A 221 0 R/Count 3/First 227 0 R/Last 235 0 R/Next 239 0 R/Parent 187 0 R/Prev 203 0 R/Title 224 0 R>>endobj247 0 obj<</A 245 0 R/Count 7/First 251 0 R/Last 275 0 R/Next 279 0 R/Parent 2934 0 R/Prev 187 0 R/Title 248 0 R>>endobj279 0 obj<</A 277 0 R/Count 9/First 283 0 R/Last 323 0 R/Next 327 0 R/Parent 2934 0 R/Prev 247 0 R/Title 280 0 R>>endobj327 0 obj<</A 325 0 R/Count -4/First 331 0 R/Last 343 0 R/Next 347 0 R/Parent 2934 0 R/Prev 279 0 R/Title 328 0 R>>endobj1606 0 obj<</Annots[1601 0 R 1602 0 R 1609 0 R 1603 0 R 3110 0 R 3111 0 R]/Contents 1607 0 R/MediaBox[0 0 595.276 841.89]/Parent 1569 0 R/Resources 1605 0 R/Type/Page>>endobj1769 0 obj<</Annots[1766 0 R 1767 0 R 3105 0 R 3106 0 R]/Contents 1770 0 R/MediaBox[0 0 595.276 841.89]/Parent 1772 0 R/Resources 1768 0 R/Type/Page>>endobj2934 0 obj<</Count 64/First 3 0 R/Last 427 0 R/Type/Outlines>>endobj3031 0 obj<</Author(Yanchang Zhao)/CreationDate(D:20151020155024+11'00')/Creator(LaTeX with hyperref package)/Keywords(R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis)/ModDate(D:20160310065242+05'30')/PTEX.Fullbanner(This is MiKTeX-pdfTeX 2.9.4225 \(1.40.12\))/Producer(pdfTeX-1.40.12)/Subject(R data mining machine learning analytics)/Title(R and Data Mining: Examples and Case Studies)/Trapped/False>>endobj3032 0 obj<</Length 4144/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.157285, 2014/12/12-00:43:15        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Yanchang Zhao</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R data mining machine learning analytics</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">R and Data Mining: Examples and Case Studies</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2015-10-20T15:50:24+11:00</xmp:CreateDate>
+         <xmp:CreatorTool>LaTeX with hyperref package</xmp:CreatorTool>
+         <xmp:ModifyDate>2016-03-10T06:52:42+05:30</xmp:ModifyDate>
+         <xmp:MetadataDate>2016-03-10T06:52:42+05:30</xmp:MetadataDate>
+         <pdf:Keywords>R data mining example case study data import and export decision tree random forest regression classification prediction clustering outlier detection time series analysis forecasting association rule text mining social network analysis</pdf:Keywords>
+         <pdf:Producer>pdfTeX-1.40.12</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <pdfx:PTEX.Fullbanner>This is MiKTeX-pdfTeX 2.9.4225 (1.40.12)</pdfx:PTEX.Fullbanner>
+         <xmpMM:DocumentID>uuid:b10f336a-40a4-a84d-84e5-f60831f44a00</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:adb5d614-94f8-7544-a8bd-a72310997a2c</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj3105 0 obj<</AP<</N 3107 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160306073604+05'30')/F 4/M(D:20160306073604+05'30')/NM(c743c208-6db8-124d-bc1c-25d38a85741e)/P 1769 0 R/Popup 3106 0 R/QuadPoints[104.944 466.333 513.01 466.333 104.944 456.37 513.01 456.37 90.0 454.378 513.011 454.378 90.0 444.415 513.011 444.415 90.0 442.422 164.031 442.422 90.0 432.459 164.031 432.459]/Rect[87.3405 432.148 515.671 466.644]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3106 0 obj<</F 28/Open false/Parent 3105 0 R/Rect[595.276 346.333 775.276 466.333]/Subtype/Popup/Type/Annot>>endobj3107 0 obj<</BBox[0.0 0.0 428.33 34.4962]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3108 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3108 0 obj<</BBox[0.0 0.0 428.33 34.4962]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3109 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3109 0 obj<</BBox[87.3405 432.148 515.671 466.644]/Filter[/FlateDecode]/FormType 1/Length 184/Matrix[1.0 0.0 0.0 1.0 -87.3405 -432.148]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâTè;ÆB1˚¨¬+∞¸w≤$^√khÿ>æBâ°yN&œøA"	Ø¡d∏Ã¿<Pì˛	˙ÚYlbÚ4häkZ¿—¢4ï∑·¨H¥f≥G1G˝ˆÿ”mÌÄ€∏èE`fhÏZA31úÎƒ3‘· $Y	◊Ω[˘yJò•Ÿ.Y÷Nì=€ﬁ~{∑®†˘˙iQ√I˘’bÑî˙i±∫æZ8Iôõ=ä]_≠π„4Ÿ≥ÌÌ∑Øñ∑  ≥·W'endstreamendobj3110 0 obj<</AP<</N 3112 0 R>>/C[1.0 1.0 0.0]/CreationDate(D:20160305080728+05'30')/F 4/M(D:20160305080728+05'30')/NM(5236be1f-cacf-6744-8903-92053a9f2dbb)/P 1606 0 R/Popup 3111 0 R/QuadPoints[440.515 139.686 513.004 139.686 440.515 129.723 513.004 129.723 90.0 127.73 125.661 127.73 90.0 117.767 125.661 117.767 128.492 127.192 201.587 127.192 128.492 117.937 201.587 117.937 205.841 127.73 512.996 127.73 205.841 117.767 512.996 117.767 90.0 115.775 136.112 115.775 90.0 105.812 136.112 105.812 139.517 115.237 144.747 115.237 139.517 105.982 144.747 105.982 148.146 115.775 195.052 115.775 148.146 105.812 195.052 105.812 198.454 115.237 318.532 115.237 198.454 105.982 318.532 105.982 323.221 115.775 332.105 115.775 323.221 105.812 332.105 105.812 335.506 115.237 513.008 115.237 335.506 105.982 513.008 105.982 90.0 103.82 279.659 103.82 90.0 93.8573 279.659 93.8573 282.973 103.282 293.424 103.282 282.973 94.0268 293.424 94.0268 296.732 103.82 329.298 103.82 296.732 93.8573 329.298 93.8573]/Rect[87.3404 93.546 515.663 139.997]/Subj(Highlight)/Subtype/Highlight/T(dbiswas)/Type/Annot>>endobj3111 0 obj<</F 28/Open false/Parent 3110 0 R/Rect[595.276 19.6859 775.276 139.686]/Subtype/Popup/Type/Annot>>endobj3112 0 obj<</BBox[0.0 0.0 428.323 46.4513]/FormType 1/Length 20/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 3113 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/MWFOForm Do
+endstreamendobj3113 0 obj<</BBox[0.0 0.0 428.323 46.4513]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 3114 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj3114 0 obj<</BBox[87.3404 93.546 515.663 139.997]/Filter[/FlateDecode]/FormType 1/Length 629/Matrix[1.0 0.0 0.0 1.0 -87.3404 -93.546]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+Hâlï;í1DÛ9OÄ">¸ùGUv"'N|}7G$àŸR¥[-v|Ä Núr˙˚˚ TEZ˙wôe*l5±j¢ö˛\¶ù∏VK¨BπqIAi§⁄Z:>T{ÈuV YÀ—ﬁ–
+i·vúAYÈ«∑kx]øÆës£V€¨©7™Ö;édb.5qqÛº‡ºåYÀîke9⁄Z«=√é'(+ˆ¯ˆ›≥ºµuÆi∞Ò˘thÌ®å•ír.+£k
+J°¸˘gŸP„ÔÎíÃTzÌ.Ω!)nº˝Àî}lªÄOy´õíu„nf‡Í@.(É€ø¬Bc‘àÔnúô_PV∂€"ΩŸôyÀ£ìyŒTùƒò‘O'ë‹ö›ù‘älÆGC'1èVFe«ﬂæ˚ŸIÃË=Ö¯ttæ;yèh)+sxî9¢•|F˚∂°—6Î3£fxÍñPûU‡lÆx¥€vèN≤·ú’éÔ->—«∞mÅﬂ¿4ï¸ﬁ5¸\Òp˜}Á7&p{ï§I‰ÁäÉÿ6Áß‹©®p‡ßßÜ˛€QvÙ±}Âß¢$Î”≈ofÙ&·âGŸ‹v¯)÷g{S5º‚at≈√›˜ï∆äJÆëü™íä~Gq€Ê¸>€≥ó¿o~/π„KÎ∂£ÏËc˚ ﬂ¡°‘Àc˘ŒnÊ∏{±ç¨≠›ã≠“˘ﬁ“∞˛±•éÜÂ÷±ÏsWv™€ˆ≈^Û¯Ä8å≤‹ãW:fb‡˜„òÀqÛŒsÅ.”,ˇœ⁄∆lòVóPΩb“Ém+ûº]˚ˆÁ÷≈±¶Ä	Œi◊∂-úÁ/S‡¶¯˘ì—‹Tô™ï`tegª-r˚/¿ ©màÁendstreamendobjxref0 10000000000 65535 f
+163 10002679978 00000 n
+187 10002680101 00000 n
+203 10002680225 00000 n
+223 10002680347 00000 n
+247 10002680469 00000 n
+279 10002680592 00000 n
+327 10002680715 00000 n
+1606 10002680839 00000 n
+1769 10002681016 00000 n
+2934 10002681175 00000 n
+3031 20002681246 00000 n
+0002681846 00000 n
+3105 100002686069 00000 n
+0002686543 00000 n
+0002686661 00000 n
+0002686946 00000 n
+0002687182 00000 n
+0002687584 00000 n
+0002688687 00000 n
+0002688805 00000 n
+0002689091 00000 n
+0002689328 00000 n
+trailer<</Size 3115/Root 3030 0 R/Info 3031 0 R/ID[<386C534FF252242D8D01E20334847F51><995259CDD32649389454A97C0040CB58>]/Prev 2679413>>startxref2690173%%EOF

@@ -143,9 +143,9 @@ scatterplot3d(iris$Petal.Width, iris$Sepal.Length, iris$Sepal.Width)
 
 
 #Package rgl supports interactive 3D scatter plot with plot3d().
-//install.packages("rgl")
-library(rgl)
-plot3d(iris$Petal.Width, iris$Sepal.Length, iris$Sepal.Width)
+#install.packages("rgl")
+#library(rgl)
+#plot3d(iris$Petal.Width, iris$Sepal.Length, iris$Sepal.Width)
 
 
 #A heat map presents a 2D display of a data matrix, which can be generated with heatmap()
@@ -435,6 +435,407 @@ irisPred <- predict(rf, newdata=testData)
 table(irisPred, testData$Species)
 
 plot(margin(rf, testData$Species))
+
+#[2016-03-03]
+
+#CH - 5 : Regression
+####################
+
+#rep(x, ...)
+#rep.int(x, times)
+year <- rep(2008:2010, each=4)
+quarter <- rep(1:4, 3)
+cpi <- c(162.2, 164.6, 166.5, 166.0,
+         + 166.2, 167.0, 168.6, 169.5,
+         + 171.0, 172.1, 173.3, 174.0)
+plot(cpi, xaxt="n", ylab="CPI", xlab="")
+#draw x-axis
+#In the code below, an x-axis is added manually with function axis(), where las=3 makes text vertical.
+axis(1, labels=paste(year,quarter,sep="Q"), at=1:12, las=3)
+cor(year,cpi)
+cor(quarter,cpi)
+
+#Then a linear regression model is built with function lm() on the above data, using year and quarter as predictors and CPI as response.
+fit <- lm(cpi ~ year + quarter)
+attributes(fit)
+# differences between observed values and fitted values
+residuals(fit)
+summary(fit)
+plot(fit)
+#predict
+data2011 <- data.frame(year=2011, quarter=1:4)
+cpi2011 <- predict(fit, newdata=data2011)
+#Making a style vector. 1 will repeat 12 times, 2 will repeat 4 times
+style <- c(rep(1,12), rep(2,4))
+plot(c(cpi, cpi2011), xaxt="n", ylab="CPI", xlab="", pch=style, col=style)
+axis(1, at=1:16, las=3,
+       + labels=c(paste(year,quarter,sep="Q"), "2011Q1", "2011Q2", "2011Q3", "2011Q4"))
+
+
+#5.2 Logistic Regression
+#logit(y) = c0 + c1x1 + c2x2 +    + ckxk;
+#where x1; x2;    ; xk are predictors, y is a response to predict, and logit(y) = ln( y
+#                                                                                        1􀀀y ). The above
+#equation can also be written as
+#y =
+#  1
+#1 + e􀀀(c0+c1x1+c2x2++ckxk) :
+#Logistic regression can be built with function glm() by setting family to binomial(link="logit").
+
+#5.3 Generalized Linear Regression
+
+data("bodyfat", package="TH.data")
+myFormula <- DEXfat ~ age + waistcirc + hipcirc + elbowbreadth + kneebreadth
+bodyfat.glm <- glm(myFormula, family = gaussian("log"), data = bodyfat)
+#Can alternativelt try with family=poisson
+#bodyfat.glm <- glm(myFormula, family = poisson, data = bodyfat)
+summary(bodyfat.glm)
+pred <- predict(bodyfat.glm, type="response")
+plot(bodyfat$DEXfat, pred, xlab="Observed Values", ylab="Predicted Values")
+abline(a=0, b=1)
+
+#In the above code, if family=gaussian("identity") is used, the built model would be similar
+#to linear regression. One can also make it a logistic regression by setting family to binomial("
+#logit").
+
+#Q. What is difference between Linear Regression and Generelized Linear Regression?
+#While linear regression is to nd the line that comes closest to data, non-linear regression is to
+#t a curve through data. Function nls() provides nonlinear regression.
+
+
+#CH 6 - Clustering
+################
+
+#6.1 The k-Means Clustering
+#library(cluster)
+iris2 <- iris
+iris2$Species <- NULL
+(kmeans.result <- kmeans(iris2, 3))
+table(iris$Species, kmeans.result$cluster)
+
+plot(iris2[c("Sepal.Length", "Sepal.Width")], col = kmeans.result$cluster)
+# plot cluster centers
+points(kmeans.result$centers[,c("Sepal.Length", "Sepal.Width")], col = 1:3,
++ pch = 8, cex=2)
+
+
+#6.2. THE K-MEDOIDS CLUSTERING
+
+#As an enhanced version of pam(), function pamk() in package fpc [Hennig, 2015]
+#does not require a user to choose k
+
+library(fpc)
+pamk.result <- pamk(iris2)
+# number of clusters
+pamk.result$nc
+# check clustering against actual species
+table(pamk.result$pamobject$clustering, iris$Species)
+layout(matrix(c(1,2),1,2)) # 2 graphs per page
+plot(pamk.result$pamobject)
+layout(matrix(1)) # change back to one graph per page
+
+
+
+#6.3 Hierarchical Clustering
+#We first draw a sample of 40 records from the iris data, so that the clustering plot will not be
+#over crowded.
+idx <- sample(1:dim(iris)[1], 40)
+irisSample <- iris[idx,]
+irisSample$Species <- NULL
+hc <- hclust(dist(irisSample), method="ave")
+plot(hc, hang = -1, labels=iris$Species[idx])
+# cut tree into 3 clusters
+rect.hclust(hc, k=3)
+groups <- cutree(hc, k=3)
+
+
+#6.4 Density-based Clustering
+
+#hclust(d, method = "complete", members = NULL)
+#d  
+#a dissimilarity structure as produced by dist.
+
+#method	
+#the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of "ward.D", "ward.D2", "single", "complete", "average" (= UPGMA), "mcquitty" (= WPGMA), "median" (= WPGMC) or "centroid" (= UPGMC).
+
+idx <- sample(1:dim(iris)[1], 40)
+irisSample <- iris[idx,]
+irisSample$Species <- NULL
+hc <- hclust(dist(irisSample), method="ave")
+#Easy way to put label
+plot(hc, hang = -1, labels=iris$Species[idx])
+# cut tree into 3 clusters
+rect.hclust(hc, k=3)
+groups <- cutree(hc, k=3)
+
+
+#6.4 Density-based Clustering
+#Leaving it for now
+
+
+
+#CH - 7 Outlier Detection
+##########################
+#attach() : Attach Set of R Objects to Search Path
+
+#7.1 Univariate Outlier Detection
+set.seed(3147)
+x <- rnorm(100)
+summary(x)
+# outliers
+boxplot.stats(x)$out
+boxplot(x)
+
+y <- rnorm(100)
+df <- data.frame(x, y)
+#confusing step; it's just removing the variable declaration from working area
+rm(x, y)
+head(df)
+#Make it searchble
+attach(df)
+
+# find the index of outliers from x
+(a <- which(x %in% boxplot.stats(x)$out))
+# find the index of outliers from y
+(b <- which(y %in% boxplot.stats(y)$out))
+detach(df)
+#outliers in both x and y
+(outlier.list1 <- intersect(a,b))
+plot(df)
+points(df[outlier.list1,], col="red", pch="+", cex=2.5)
+
+#Similarly, we can also take outliers as those data which are outliers in either x or y.
+# outliers in either x or y
+(outlier.list2 <- union(a,b))
+plot(df)
+points(df[outlier.list2,], col="blue", pch="x", cex=2)
+
+#7.2 Outlier Detection with LOF
+
+#LOF (Local Outlier Factor).
+#LOF (Local Outlier Factor) is an algorithm for identifying density-based local outliers.
+#With LOF, the local density of a point is compared with that of its neighbors.
+#If the former is significantly lower than the latter (with an LOF value greater than one), the point 
+#is in a sparser region than its neighbors, which suggests it be an outlier. A shortcoming of LOF
+#is that it works on numeric data only.
+
+#Rest - Leaving it for now
+
+#7.3 Outlier Detection by Clustering
+#Another way to detect outliers is clustering. By grouping data into clusters, those data not
+#assigned to any clusters are taken as outliers.
+#We can also detect outliers with the k-means algorithm. With k-means, the data are partitioned
+#into k groups by assigning them to the closest cluster centers. After that, we can calculate the
+#distance (or dissimilarity) between each object and its cluster center, and pick those with largest
+#distances as outliers.
+# remove species from the data to cluster
+iris2 <- iris[,1:4]
+kmeans.result <- kmeans(iris2, centers=3)
+# cluster centers
+kmeans.result$centers
+# cluster IDs
+kmeans.result$cluster
+## calculate distances between objects and cluster centers
+
+#Associating each record to one of the centers
+centers <- kmeans.result$centers[kmeans.result$cluster, ]
+#Find distance of each point from center
+#rowSums : Form Row and Column Sums and Means
+distances <- sqrt(rowSums((iris2 - centers)^2))
+# pick top 5 largest distances
+outliers <- order(distances, decreasing=T)[1:5]
+# who are outliers
+print(outliers)
+print(iris2[outliers,])
+# plot clusters
+#col = color
+plot(iris2[,c("Sepal.Length", "Sepal.Width")], pch="o", col=kmeans.result$cluster, cex=0.3)
+# plot cluster centers
+points(kmeans.result$centers[,c("Sepal.Length", "Sepal.Width")], col=1:3,pch=8, cex=1.5)
+# plot outliers
+points(iris2[outliers, c("Sepal.Length", "Sepal.Width")], pch="+", col=4, cex=1.5)
+
+
+#7.4 Outlier Detection from Time Series
+#the time series data are first decomposed with robust regression using function stl() and then outliers
+#are identified.
+> # use robust fitting
+f <- stl(AirPassengers, "periodic", robust=TRUE)
+(outliers <- which(f$weights<1e-8))
+
+# set layout
+op <- par(mar=c(0, 4, 0, 3), oma=c(5, 0, 4, 0), mfcol=c(4, 1))
+plot(f, set.pars=NULL)
+sts <- f$time.series
+# plot outliers
+points(time(sts)[outliers], 0.8*sts[,"remainder"][outliers], pch="x", col="red")
+par(op) # reset layout
+
+
+#CH 8 - Time Series Analysis and Mining
+#autoregressive integrated moving average (ARIMA)
+#Dynamic Time Warping (DTW)
+#DWT (Discrete Wavelet Transform)
+
+#8.1 Time Series Data in R
+#A frequency of 7 indicates that a time series is composed of weekly data, and 12 and 4 are used respectively for
+#monthly and quarterly series.
+
+> a <- ts(1:30, frequency=12, start=c(2011,3))
+> print(a)
+> str(a)
+> attributes(a)
+
+#8.2 Time Series Decomposition
+
+# decompose time series
+apts <- ts(AirPassengers, frequency=12)
+f <- decompose(apts)
+#apts <- ts(AirPassengers, frequency=12)
+f <- stats::decompose(apts)
+> # seasonal figures
+f$figure
+plot(f$figure, type="b", xaxt="n", xlab="")
+# get names of 12 months in English words
+monthNames <- months(ISOdate(2011,1:12,1))
+# label x-axis with month names
+# las is set to 2 for vertical label orientation
+axis(1, at=1:12, labels=monthNames, las=2)
+plot(f)
+
+#8.3 Time Series Forecasting
+fit <- arima(AirPassengers, order=c(1,0,0), list(order=c(2,1,0), period=12))
+fore <- predict(fit, n.ahead=24)
+> # error bounds at 95% confidence level
+U <- fore$pred + 2*fore$se
+L <- fore$pred - 2*fore$se
+#col=c(1,2,4,4)
+#AirPassengers in black
+#fore$pred in red
+#Upper ND LOWER bound in blue 
+ts.plot(AirPassengers, fore$pred, U, L, col=c(1,2,4,4), lty = c(1,1,2,2)) 
+ts.plot(AirPassengers, fore$pred, U, L, col=c(1,2,4,4)) 
+legend("topleft", c("Actual", "Forecast", "Error Bounds (95% Confidence)"),col=c(1,2,4), lty=c(1,1,2))
+
+
+#8.4.1 Dynamic Time Warping
+#Dynamic Time Warping (DTW) finds optimal alignment between two time series
+#In that package, function dtw(x, y, ...) computes dynamic time warp and finds optimal alignment between two
+#time series x and y, and dtwDist(mx, my=mx, ...) or dist(mx, my=mx, method="DTW", ...)
+#calculates the distances between time series mx and my.
+library(dtw)
+idx <- seq(0, 2*pi, len=100)
+a <- sin(idx) + runif(100)/10
+b <- cos(idx)
+align <- dtw(a, b, step=asymmetricP1, keep=T)
+dtwPlotTwoWay(align)
+
+#CH 9 - Association Rules
+#########################
+#9.2 The Titanic Dataset
+
+str(Titanic)
+df <- as.data.frame(Titanic)
+head(df)
+titanic.raw <- NULL
+for(i in 1:4) {
+  titanic.raw <- cbind(titanic.raw, rep(as.character(df[,i]), df$Freq))
+  }
+titanic.raw <- as.data.frame(titanic.raw)
+names(titanic.raw) <- names(df)[1:4]
+dim(titanic.raw)
+str(titanic.raw)
+summary(titanic.raw)
+
+
+#Support, confidence and lift are three common measures for selecting interesting association
+#rules. Besides them, there are many other interestingness measures, such as chi-square, conviction,
+#gini and leverage
+
+
+9.3 Association Rule Mining
+
+> library(arules)
+> # find association rules with default settings
+  > rules.all <- apriori(titanic.raw)
+> quality(rules.all) <- round(quality(rules.all), digits=3)
+> rules.all
+> inspect(rules.all)
+> ## use code below if above code does not work
+  > arules::inspect(rules.all)
+> # rules with rhs containing "Survived" only
+  > rules <- apriori(titanic.raw, control = list(verbose=F),
+                     + parameter = list(minlen=2, supp=0.005, conf=0.8),
+                     + appearance = list(rhs=c("Survived=No", "Survived=Yes"),
+                                         + default="lhs"))
+> quality(rules) <- round(quality(rules), digits=3)
+> rules.sorted <- sort(rules, by="lift")
+> inspect(rules.sorted)
+
+#9.4 Removing Redundancy
+
+# For example, the above rule 2 provides
+# no extra knowledge in addition to rule 1, since rules 1 tells us that all 2nd-class children survived.
+# Generally speaking, when a rule (such as rule 2) is a super rule of another rule (such as rule 1)
+# and the former has the same or a lower lift, the former rule (rule 2) is considered to be redundant.
+# Other redundant rules in the above result are rules 4, 7 and 8, compared respectively with rules
+# 3, 6 and 5.
+
+> # find redundant rules
+  > subset.matrix <- is.subset(rules.sorted, rules.sorted)
+> subset.matrix[lower.tri(subset.matrix, diag=T)] <- NA
+> redundant <- colSums(subset.matrix, na.rm=T) >= 1
+> which(redundant)
+> # remove redundant rules
+  > rules.pruned <- rules.sorted[!redundant]
+> inspect(rules.pruned)
+
+9.5 Interpreting Rules
+
+# While it is easy to find high-lift rules from data, it is not an easy job to understand the identied
+# rules. It is not uncommon that the association rules are misinterpreted to nd their business meanings.
+# For instance, in the above rule list rules.pruned, the first rule "{Class=2nd, Age=Child}
+# => {Survived=Yes}" has a confidence of one and a lift of three and there are no rules on children
+# of the 1st or 3rd classes. Therefore, it might be interpreted by users as children of the 2nd
+# class had a higher survival rate than other children. This is wrong! The rule states only that all
+# children of class 2 survived, but provides no information at all to compare the survival rates of
+# dierent classes. To investigate the above issue, we run the code below to nd rules whose rhs is
+# "Survived=Yes" and lhs contains "Class=1st", "Class=2nd", "Class=3rd", "Age=Child" and
+# "Age=Adult" only, and which contains no other items (default="none"). We use lower thresholds
+# for both support and condence than before to nd all rules for children of dierent classes.
+
+> rules <- apriori(titanic.raw,
+                   + parameter = list(minlen=3, supp=0.002, conf=0.2),
+                   + appearance = list(rhs=c("Survived=Yes"),
+                                       + lhs=c("Class=1st", "Class=2nd", "Class=3rd",
+                                               + "Age=Child", "Age=Adult"),
+                                       + default="none"),
+                   + control = list(verbose=F))
+> rules.sorted <- sort(rules, by="confidence")
+> inspect(rules.sorted)
+
+9.6 Visualizing Association Rules
+> library(arulesViz)
+> plot(rules.all)
+plot(rules.all, method="graph")
+plot(rules.all, method="graph", control=list(type="items"))
+
+
+plot(rules.all, method="paracoord", control=list(reorder=TRUE))
+
+
+
+#CH 10 - Text Mining
+####################
+
+
+
+
+
+
+
+
+
 
 
 
