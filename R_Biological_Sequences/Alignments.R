@@ -63,6 +63,10 @@ F
 s<-pairwiseAlignment(AAString("HEAGAWGHEEAS"), AAString("PAWHEAE"),substitutionMatrix = "BLOSUM62",gapOpening = 0, 
                   gapExtension = -8,scoreOnly = FALSE)
 score<-score(s)
+score
+
+#Need to check from video. Why is this needed? Check from video
+
 #To illustrate how the probability of alignment scores larger than 1 can be computed we sample
 #randomly from the names of the amino acids, seven for y and 10 for x and
 #compute the maximum alignment score. This is repeated 1000 times and the
